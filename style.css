@@ -1,0 +1,178 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('breathiction_page-0001.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #111827;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #800000;
+    font-weight: bold;
+}
+
+header button {
+    background-color: #4d0000;
+    color: #ffffff;
+    padding: 8px 16px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #800000;
+}
+
+/* Form Styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-size: 16px;
+    color: #cbd5e1;
+}
+
+input, select {
+    padding: 12px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #f1f5f9;
+    border: 1px solid #800000;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #4d0000;
+}
+
+/* Timer Styling */
+#timer, #shortTimer {
+    display: inline-block;
+    font-size: 20px;
+    color: #800000;
+    margin-left: 8px;
+}
+
+/* Results Display */
+#results, #shortResults {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #1e293b;
+    color: #ffffff;
+    border: 1px solid #800000;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Individual result item */
+.result-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #800000;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+
+/* Button Styling */
+button {
+    background-color: #800000;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4d0000;
+}
+
+/* Menu Styling */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menu button {
+    width: 100%;
+}
+
+/* Feedback Form Styling */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+textarea {
+    padding: 12px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #f1f5f9;
+    border: 1px solid #800000;
+    border-radius: 8px;
+}
+
+textarea:focus {
+    border-color: #4d0000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    input, select, button, textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

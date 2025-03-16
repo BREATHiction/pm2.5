@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Feedback - BREATHiction</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Feedback</h1>
+            <button onclick="window.location.href='index.html'">Back to Main Menu</button>
+        </header>
+
+        <div class="feedback-form">
+            <label>Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+
+            <label>Your Feedback:</label>
+            <textarea id="feedback" rows="5" placeholder="Write your feedback here..."></textarea>
+
+            <button onclick="submitFeedback()">Submit Feedback</button>
+        </div>
+
+        <div id="feedbackResults"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

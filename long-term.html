@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Long-Term Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Long-Term Exposure Calculator</h1>
+            <button onclick="window.location.href='index.html'">Back to Main Menu</button>
+        </header>
+
+        <div class="form">
+            <!-- 🌍 City Selector -->
+            <label>Select City:</label>
+            <select id="cityDropdown">
+                <option value="">Select a city...</option>
+                <option value="manila">Manila</option>
+                <option value="quezon-city">Quezon City</option>
+                <option value="makati">Makati</option>
+                <option value="pasig">Pasig</option>
+                <option value="taguig">Taguig</option>
+                <option value="pasay">Pasay</option>
+                <option value="mandaluyong">Mandaluyong</option>
+                <option value="paranaque">Parañaque</option>
+                <option value="las-pinas">Las Piñas</option>
+                <option value="caloocan">Caloocan</option>
+                <option value="malabon">Malabon</option>
+                <option value="navotas">Navotas</option>
+                <option value="san-juan">San Juan</option>
+                <option value="marikina">Marikina</option>
+                <option value="valenzuela">Valenzuela</option>
+            </select>
+            <button onclick="redirectToAirQuality()">Check Air Quality</button>
+
+            <input type="number" id="concentration" placeholder="Concentration (µg/m³)" />
+            <div class="timer-container">
+                <input type="number" id="breathsPerMinute" placeholder="Breaths per minute" />
+                <button onclick="startTimer()">Start Timer</button>
+                <span id="timer">60</span>
+            </div>
+    
+    <input type="number" id="age" placeholder="Age (years)" />
+    <input type="number" id="bodyWeight" placeholder="Body Weight (kg)" />
+    
+    
+    <button onclick="calculateLongTerm()">Calculate</button>
+
+    <div id="results"></div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
