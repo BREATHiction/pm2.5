@@ -47,19 +47,21 @@ function calculateLongTerm() {
 
     // Function to determine the color and label based on P and P2 values
 function getColorForPercentage(value) {
-    if (value <= 50) return { color: 'green', label: 'Low' };
+    if (value <= 50) return { color: 'green', label: 'Good' };
     if (value <= 100) return { color: 'yellow', label: 'Moderate' };
-    if (value <= 150) return { color: 'orange', label: 'Unhealthy' };
-    if (value <= 200) return { color: 'red', label: 'Very Unhealthy' };
+    if (value <= 150) return { color: 'orange', label: 'Unhealthy for sensitive people' };
+    if (value <= 200) return { color: 'red', label: 'Unhealthy' };
+    if (value <= 300) return { color: 'puple', label: 'Very Unhealthy' };
     return { color: 'maroon', label: 'Hazardous' };
 }
 
 // Function to determine the color and label based on RQ and RQ2 values
 function getColorForRisk(value) {
-    if (value <= 0.50) return { color: 'green', label: 'Low' };
+    if (value <= 0.50) return { color: 'green', label: 'Good' };
     if (value <= 1) return { color: 'yellow', label: 'Moderate' };
-    if (value <= 1.50) return { color: 'orange', label: 'Unhealthy' };
-    if (value <= 2) return { color: 'red', label: 'Very Unhealthy' };
+    if (value <= 1.50) return { color: 'orange', label: 'Unhealthy for sensitive people' };
+    if (value <= 2) return { color: 'red', label: 'Unhealthy' };
+    if (value <= 3) return { color: 'purple', label: 'Very Unhealthy' };
     return { color: 'maroon', label: 'Hazardous' };
 }
 
@@ -111,19 +113,21 @@ function calculateShortTerm() {
 
     // Function to determine the color and label based on P and P2 values
 function getColorForPercentage(value) {
-    if (value <= 50) return { color: 'green', label: 'Low' };
+    if (value <= 50) return { color: 'green', label: 'Good' };
     if (value <= 100) return { color: 'yellow', label: 'Moderate' };
-    if (value <= 150) return { color: 'orange', label: 'Unhealthy' };
-    if (value <= 200) return { color: 'red', label: 'Very Unhealthy' };
+    if (value <= 150) return { color: 'orange', label: 'Unhealthy for sensitive people' };
+    if (value <= 200) return { color: 'red', label: 'Unhealthy' };
+    if (value <= 300) return { color: 'puple', label: 'Very Unhealthy' };
     return { color: 'maroon', label: 'Hazardous' };
 }
 
 // Function to determine the color and label based on RQ and RQ2 values
 function getColorForRisk(value) {
-    if (value <= 0.50) return { color: 'green', label: 'Low' };
+    if (value <= 0.50) return { color: 'green', label: 'Good' };
     if (value <= 1) return { color: 'yellow', label: 'Moderate' };
-    if (value <= 1.50) return { color: 'orange', label: 'Unhealthy' };
-    if (value <= 2) return { color: 'red', label: 'Very Unhealthy' };
+    if (value <= 1.50) return { color: 'orange', label: 'Unhealthy for sensitive people' };
+    if (value <= 2) return { color: 'red', label: 'Unhealthy' };
+    if (value <= 3) return { color: 'purple', label: 'Very Unhealthy' };
     return { color: 'maroon', label: 'Hazardous' };
 }
 
@@ -151,3 +155,4 @@ document.getElementById('results').innerHTML = `
 
 
 }
+
